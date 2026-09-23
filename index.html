@@ -1,0 +1,639 @@
+<!DOCTYPE html>
+<html lang="zh-CN"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover"><meta name="robots" content="noindex, nofollow, noimageindex"><meta name="referrer" content="no-referrer"><meta name="theme-color" content="#0a183d"><title>LEFT · forget me not</title><style>*{box-sizing:border-box;-webkit-tap-highlight-color:transparent}html{scroll-behavior:smooth}body{margin:0;min-width:300px;min-height:100vh;color:#eafaff;font-family:"Microsoft YaHei","PingFang SC",Arial,sans-serif;background:#08152e;background-image:radial-gradient(ellipse at 78% 86%,#0c759c70,transparent 48%),radial-gradient(ellipse at 15% 43%,#34327980,transparent 50%),linear-gradient(140deg,#061424,#13234d 60%,#0d3d64);overflow-x:hidden}button,a{touch-action:manipulation}button{font:inherit;cursor:pointer}button:focus-visible,a:focus-visible,canvas:focus-visible{outline:3px solid #fff3b7;outline-offset:4px}button:active{transform:translateY(2px)}.svg-defs{position:absolute}.atmosphere{position:fixed;inset:0;pointer-events:none;overflow:hidden;background-image:radial-gradient(circle,#d9eaff60 .7px,transparent 1px),radial-gradient(circle,#6da4d944 .7px,transparent 1px);background-size:83px 97px,37px 43px;background-position:17px 12px,4px 24px}.lightning{position:absolute;top:0;height:110%;width:28%;fill:none;stroke:#7894e3;stroke-width:1.7;opacity:.28;filter:drop-shadow(0 0 5px #ac9aff)}.lightning-left{left:-2%;transform:rotate(-8deg)}.lightning-right{right:-7%;stroke:#c29beb;opacity:.4}.page{position:relative;z-index:1;max-width:1180px;margin:auto;padding:0 40px}.masthead{height:98px;border-bottom:1px solid #8ac9e326;display:flex;align-items:center;justify-content:space-between}.brand{display:flex;align-items:center;gap:10px;text-decoration:none;color:#f0fcff;font-size:16px;font-weight:800;letter-spacing:1px}.brand small{display:block;color:#88bdcb;font-size:8px;letter-spacing:2px;margin-top:4px}.brand-icon{font-size:34px;color:#7ee7ef}.edition{font:10px Consolas,monospace;letter-spacing:2px;color:#a0c3d4}.edition span{color:#7ee7ef;padding:0 14px}.layout{display:grid;grid-template-columns:minmax(0,1fr) 438px;gap:82px;align-items:center;padding:38px 0 28px}.poster{min-width:0;padding-bottom:4px}.poster-top{display:flex;align-items:center;height:66px}.ticket{background:#61d4ea;color:#062a49;border:3px solid #f0ffff;box-shadow:4px 4px 0 #084569;border-radius:4px;width:64px;display:flex;align-items:center;flex-direction:column;transform:rotate(-5deg);padding:3px}.ticket b{font:900 35px/1 Arial,sans-serif;letter-spacing:-2px;color:white;-webkit-text-stroke:1px #073e55}.ticket small{font:900 10px Arial,sans-serif;letter-spacing:1px;margin-top:2px}.slanted-note{margin-left:9px;padding:6px 10px;color:#62dbed;font-size:12px;font-weight:900;line-height:1.5;letter-spacing:2px;border:1px solid #7fccde;transform:rotate(12deg);background:#0b263d}.flower-row{margin-left:auto;color:#a4e5fa;font-size:22px;letter-spacing:3px;align-self:flex-start}.wordmark{position:relative;margin:21px -12px 8px -14px}.wordmark>svg:first-child{display:block;width:100%;height:auto;overflow:visible}.title-spark{position:absolute;width:44px;height:44px;color:#c1faff;right:14px;top:130px;filter:drop-shadow(0 0 12px #43d4fe)}.poster-copy{margin-top:14px}.micro-label{font:9px Consolas,monospace;letter-spacing:2px;color:#73ddeb}.poster-copy h2{font-size:25px;margin:14px 0 12px;letter-spacing:2px}.poster-copy p{font-size:13px;line-height:1.9;color:#a8bdd8;margin:0}.mission{margin-top:29px;display:flex;align-items:center;gap:17px;border-top:1px solid #b0e9ff2b;padding-top:22px;position:relative}.target-photo{flex:0 0 74px;width:74px;height:74px;padding:4px;border:1px solid #6dcddd;border-radius:50%;background:#0c3b55;box-shadow:0 0 20px #49c9e41a}.target-photo img{display:block;width:100%;height:100%;object-fit:contain;border-radius:50%}.mission .micro-label{font-size:8px;letter-spacing:1.5px}.mission h3{font-size:16px;margin:7px 0}.mission p{font-size:11px;color:#9ab6cc;margin:0}.mission>svg{width:25px;height:25px;color:#52c9e0;margin-left:auto;align-self:flex-start;transform:rotate(16deg)}.poster-bottom{display:flex;justify-content:space-between;align-items:center;font:9px Consolas,monospace;letter-spacing:1.5px;color:#6991b1;margin-top:26px}.poster-bottom span:last-child{font-size:29px;color:#9ce9f4}.console-area{scroll-margin-top:14px;width:100%;max-width:438px;justify-self:center}.console{position:relative;background:linear-gradient(135deg,#a9ffff 0,#54d3e7 15%,#39b9d2 63%,#36a6c9 100%);padding:17px 20px 12px;border-radius:27px 27px 55px 27px;border:1px solid #b8ffff;box-shadow:inset 3px 3px 0 #e4ffff70,inset -6px -3px 0 #1c8fb5,8px 9px 0 #115b82,10px 13px 0 #08273e,0 28px 60px #0007}.console-top{display:flex;justify-content:space-between;align-items:center;margin:0 5px 13px;color:#115272}.console-name{font-size:14px;font-weight:900;letter-spacing:1px}.console-name i{font:italic 900 12px Arial,sans-serif;margin-left:5px}.power{font:8px Consolas,monospace;letter-spacing:1.2px;display:flex;align-items:center;gap:5px}.power b{display:block;width:5px;height:5px;border-radius:50%;background:#edffb3;box-shadow:0 0 6px #ffffa2}.screen-bezel{padding:13px 11px 0;border-radius:14px 14px 27px 14px;background:linear-gradient(140deg,#233b53,#142b40 70%);border:1px solid #193447;box-shadow:0 2px 0 #c0fbff70,inset 0 2px 3px #0008}.hud{display:grid;grid-template-columns:1fr 1fr 106px;gap:9px;align-items:center;padding:0 4px 10px}.panel{min-width:0}.panel small{display:block;font:8px Consolas,"Microsoft YaHei",monospace;letter-spacing:1px;color:#9aaebb}.panel>span{display:block;font:26px/1.25 Consolas,monospace;font-weight:bold;color:#defcff;margin-top:4px;font-variant-numeric:tabular-nums;overflow-wrap:anywhere}#nextBox{display:flex;align-items:center;justify-content:flex-end;gap:9px;border-left:1px solid #99d6e92b}#nextBox small{line-height:1.7;text-align:right}#next{width:43px;height:43px;border-radius:50%;background:#0b1b30}.stage{position:relative;isolation:isolate;width:100%;overflow:hidden;border-radius:5px;border:1px solid #42647a;box-shadow:0 0 0 3px #07152270}canvas#game{width:100%;height:auto;aspect-ratio:420/640;display:block;background:linear-gradient(180deg,#0b1b32,#132f4a);touch-action:none;user-select:none;outline-offset:-4px}.screen-caption{display:flex;justify-content:space-between;padding:10px 3px 11px;font:7px Consolas,monospace;letter-spacing:1.25px;color:#819daa}.screen-caption span:first-child{color:#84b8c3}.console-controls{display:flex;align-items:center;justify-content:space-between;padding:15px 14px 2px}.direction-controls{display:flex;align-items:center;background:#163f5a;border-radius:9px;border:1px solid #0b3548;box-shadow:0 4px 0 #126283,inset 0 1px 0 #537a8c;padding:2px}.direction-controls button{width:34px;height:42px;color:#aecbd9;border:0;background:transparent;font-size:15px;text-shadow:0 1px 2px #000}.direction-controls span{color:#6b98ac;font-size:20px}.sound-control{display:flex;flex-direction:column;align-items:center;gap:7px}#soundBtn{font-size:9px;letter-spacing:.4px;background:#b3f5f5;border:1px solid #34788b;border-radius:10px;color:#125171;padding:5px 9px;box-shadow:0 2px 0 #247f9f}.sound-control small{font:7px Consolas,monospace;letter-spacing:2px;color:#145473}#dropButton{flex:none;width:63px;height:63px;border-radius:50%;background:radial-gradient(circle at 35% 22%,#dbcaff,#a28bdf 60%,#7c69bb);border:2px solid #e8dfff;color:#342d69;font:900 9px Arial,sans-serif;letter-spacing:1px;box-shadow:0 4px 0 #54769d,0 0 0 6px #b6edf17a,inset 0 1px 4px #fff8;transform:rotate(-12deg)}#dropButton span{display:block;font-size:26px;font-weight:400;line-height:1.05;margin-bottom:2px}#dropButton:active{transform:rotate(-12deg) translateY(3px)}.console-bottom{display:flex;align-items:center;justify-content:space-between;margin:12px 12px 0;color:#18617e;font:7px Consolas,monospace;letter-spacing:1px}.speaker{display:flex;gap:4px;transform:rotate(-15deg);margin-right:8px}.speaker i{display:block;width:3px;height:13px;border-radius:2px;background:#1b799a;box-shadow:1px 0 0 #a0ebf2}.tip{display:flex;justify-content:center;gap:13px;font-size:9px;color:#91b4ce;margin:23px -10px 0}.footer{border-top:1px solid #8ac9e326;display:flex;justify-content:space-between;padding:22px 0 25px;color:#698ea8;font:9px Consolas,"Microsoft YaHei",monospace;letter-spacing:1px}.footer span:first-child{color:#9cc7d8}#overlay,#winOverlay{position:absolute;inset:0;z-index:2;display:none;flex-direction:column;align-items:center;justify-content:center;gap:15px;text-align:center;background:#0a1b32f2;padding:20px;color:#eaffff}#overlay h2,#winOverlay h2{font-size:24px;margin:0}#overlay p,#winOverlay p{font-size:13px;color:#a4c4d7;margin:0}#finalScore{font:900 30px Consolas,monospace;color:#8dedf3;margin-left:10px}.dialog-label{font:9px Consolas,monospace;letter-spacing:2px;color:#7bd6e6}#overlay button,#winOverlay button{border:1px solid #c1fcff;border-radius:30px;padding:12px 25px;background:#8ae5ef;color:#113e57;font-size:13px;font-weight:800;margin-top:7px;box-shadow:0 3px 0 #3c8aab}.bigphoto{display:block;width:min(78%,240px);height:auto;max-height:45%;object-fit:contain;border:4px solid #e8fdff;border-radius:8px}#confetti{position:fixed;inset:0;z-index:0;pointer-events:none}
+@media(min-width:1200px) and (min-height:950px){.layout{padding-top:48px;padding-bottom:35px}.masthead{height:110px}}
+@media(max-width:1050px){.page{max-width:960px;padding:0 30px}.layout{grid-template-columns:minmax(0,1fr) 400px;gap:42px}.flower-row{font-size:17px}.poster-copy h2{font-size:22px}.console{padding:15px 17px 12px}.mission{gap:12px}.mission p{font-size:10px}.mission>svg{display:none}.wordmark{margin-left:-12px;margin-right:-12px}}
+@media(max-width:780px){.page{padding:0 20px;max-width:540px}.masthead{height:73px}.brand{font-size:13px}.brand-icon{font-size:27px}.brand small{font-size:6px}.edition{font-size:8px;letter-spacing:1px}.edition span{padding:0 5px}.layout{display:flex;flex-direction:column;gap:21px;padding:21px 0 20px}.poster{width:100%;display:flex;align-items:center;justify-content:space-between;gap:12px}.poster-top,.mission,.poster-bottom,.poster-copy .micro-label,.poster-copy p,.title-spark{display:none}.wordmark{width:155px;flex:0 0 155px;margin:-5px 0 -6px -5px}.wordmark>svg:first-child{height:115px}.poster-copy{margin:0;text-align:right}.poster-copy h2{font-size:17px;line-height:1.7;letter-spacing:1px;margin:0}.poster-copy h2:after{content:'合成大西瓜 · 电光掌机版';display:block;font-size:9px;color:#8cbccf;font-weight:400;letter-spacing:.5px;margin-top:5px}.console-area{max-width:414px}.console{border-radius:24px 24px 45px 24px}.footer{font-size:7px;letter-spacing:.5px;padding:19px 0}.tip{font-size:9px;gap:11px}}
+@media(max-width:420px){.page{padding:0 15px}.masthead{height:62px}.layout{padding-top:12px;gap:13px}.wordmark{width:119px;flex-basis:119px}.wordmark>svg:first-child{height:89px}.poster-copy h2{font-size:15px}.console{padding:12px 13px 10px;border-radius:21px 21px 39px 21px;box-shadow:inset 2px 2px 0 #e4ffff70,inset -5px -3px 0 #1c8fb5,5px 6px 0 #115b82,7px 9px 0 #08273e,0 20px 40px #0006}.console-top{margin-bottom:10px}.console-name{font-size:12px}.console-name i{font-size:10px}.screen-bezel{padding:10px 8px 0}.hud{grid-template-columns:1fr 1fr 86px;padding:0 2px 8px;gap:5px}.panel small{font-size:7px;letter-spacing:.5px}.panel>span{font-size:22px}#nextBox{gap:5px}#next{width:36px;height:36px}.screen-caption{font-size:6px;letter-spacing:.8px;padding:8px 1px}.console-controls{padding:13px 8px 2px}#dropButton{height:53px;width:53px;font-size:8px}#dropButton span{font-size:23px}.direction-controls button{height:35px;width:29px;font-size:13px}.direction-controls span{font-size:16px}.console-bottom{margin-top:11px;font-size:6px}.tip{font-size:8px;gap:9px;margin-top:19px}.footer span:last-child{font-size:6px}.power{font-size:7px}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+
+/* Compact, centered console: prioritize the playfield at every screen size. */
+.page{max-width:1100px;padding:0 24px;min-height:100svh;display:flex;flex-direction:column}
+.masthead{height:58px;flex-shrink:0}
+.brand{font-size:19px;letter-spacing:2px}
+.brand-icon{font-size:29px}
+.brand small{font-size:7px;letter-spacing:1.7px}
+.layout{display:flex;justify-content:center;align-items:center;flex:1;padding:14px 0 12px;gap:0}
+.console-area{width:100%;max-width:clamp(286px,calc((100svh - 386px)*.65625 + 54px),438px);scroll-margin-top:12px}
+.console{padding:12px 16px 10px;border-radius:24px 24px 43px 24px}
+.console-top{height:18px;margin:0 4px 9px}
+.console-name{font:900 italic 19px/1 Arial,sans-serif;letter-spacing:2px}
+.screen-bezel{padding:10px 8px 0}
+.hud{grid-template-columns:1fr 1fr 94px;gap:7px;padding:0 3px 8px;min-height:47px}
+.panel small{font-size:8px;letter-spacing:.5px}
+.panel>span{font-size:24px;line-height:1.1;margin-top:3px}
+#next{width:38px;height:38px}
+#nextBox{gap:7px}
+.screen-caption{font-size:6px;letter-spacing:1px;padding:8px 2px}
+.console-controls{padding:12px 6px 0;min-height:66px;gap:12px}
+.direction-controls{padding:0}
+.direction-controls button{width:38px;height:44px}
+.direction-controls span{font-size:16px}
+#dropButton{width:52px;height:52px;font-size:8px;box-shadow:0 3px 0 #54769d,0 0 0 4px #b6edf17a,inset 0 1px 4px #fff8}
+#dropButton span{font-size:23px}
+.sound-control{gap:0}
+#soundBtn{min-height:44px;padding:0 5px;background:transparent;border:0;box-shadow:none;font-size:10px;font-weight:700;white-space:nowrap}
+.sound-control small{display:none}
+.console-bottom{height:13px;margin:10px 7px 0;font-size:9px;letter-spacing:1.6px}
+.speaker i{height:11px}
+.tip{margin:17px 0 0;gap:10px;font-size:9px;line-height:14px;white-space:nowrap}
+.footer{justify-content:center;align-items:center;text-align:center;padding:12px 8px 14px;flex-shrink:0;font-size:10px;line-height:1.6;letter-spacing:1.2px}
+.footer span:first-child{color:#a0c3d4}
+#overlay,#winOverlay{padding:15px;gap:12px}
+#overlay h2,#winOverlay h2{font-size:21px}
+#overlay button,#winOverlay button{min-height:44px}
+.bigphoto{max-height:43%;flex-shrink:1;min-height:0}
+@media(max-width:600px){
+  .page{max-width:480px;padding:0 15px}
+  .masthead{height:53px}
+  .brand{font-size:17px;gap:7px}
+  .brand small{font-size:6px}
+  .brand-icon{font-size:25px}
+  .edition{font-size:7px;letter-spacing:.8px}
+  .edition span{padding:0 5px}
+  .layout{padding:12px 0 10px}
+  .console-area{max-width:clamp(280px,calc((100svh - 342px)*.65625 + 54px),414px)}
+  .console{padding:11px 13px 10px;box-shadow:inset 2px 2px 0 #e4ffff70,inset -5px -3px 0 #1c8fb5,5px 6px 0 #115b82,7px 9px 0 #08273e,0 20px 40px #0006}
+  .console-name{font-size:17px}
+  .hud{grid-template-columns:1fr 1fr 85px;gap:5px}
+  .panel small{font-size:7px}
+  .panel>span{font-size:23px}
+  #next{width:36px;height:36px}
+  #nextBox{gap:5px}
+  .console-controls{padding-left:4px;padding-right:4px;gap:8px}
+  .direction-controls button{width:35px;height:44px}
+  .direction-controls span{font-size:14px}
+  .tip{font-size:8px;gap:9px;margin-top:16px}
+  .footer,.footer span:last-child{font-size:9px;line-height:1.7;letter-spacing:.7px}
+  .footer{padding:10px 7px 12px}
+}
+@media(max-width:350px){
+  .page{padding:0 11px}
+  .console{padding-left:10px;padding-right:10px}
+  .console-controls{gap:7px}
+  .direction-controls button{width:32px}
+  #dropButton{width:46px;height:46px}
+  #soundBtn{font-size:9px}
+  .tip{font-size:7px;gap:8px}
+  .edition{font-size:6px}
+}
+/* In a short landscape viewport put the controls beside the playfield. */
+@media(max-height:560px) and (min-width:600px){
+  .page{max-width:960px;padding:0 20px}
+  .masthead{height:39px}
+  .brand{font-size:15px}.brand small{display:none}.brand-icon{font-size:22px}
+  .layout{padding:8px 0 5px}
+  .console-area{max-width:calc((100svh - 196px)*.65625 + 139px)}
+  .console{display:grid;grid-template-columns:minmax(0,1fr) 68px;column-gap:14px;padding:10px 12px 8px;border-radius:19px 19px 32px 19px}
+  .console-top{grid-column:1/-1;height:15px;margin-bottom:7px}
+  .console-name{font-size:15px}
+  .screen-bezel{grid-column:1;padding:7px 6px 0;border-radius:10px}
+  .hud{grid-template-columns:1fr 1fr 53px;gap:3px;min-height:35px;padding:0 0 5px}
+  .panel small{font-size:6px;letter-spacing:0}.panel>span{font-size:17px}
+  #nextBox{gap:4px}#nextBox small{font-size:5px}#next{width:26px;height:26px}
+  .screen-caption{font-size:5px;letter-spacing:0;padding:6px 0}
+  .console-controls{grid-column:2;grid-row:2;flex-direction:column;justify-content:center;gap:20px;padding:0;min-height:0}
+  .direction-controls button{width:26px;height:44px;font-size:11px}.direction-controls span{display:none}
+  #dropButton{width:48px;height:48px}.console-bottom{grid-column:1/-1;margin-top:8px;font-size:8px}
+  .tip{margin-top:12px;font-size:8px}.footer{font-size:7px;padding:5px 0 7px}
+  #overlay,#winOverlay{gap:5px;padding:7px}.dialog-label{font-size:6px}
+  #overlay h2,#winOverlay h2{font-size:13px}#overlay p,#winOverlay p{font-size:10px}
+  #overlay button,#winOverlay button{padding:5px 12px;margin-top:1px;font-size:10px;min-height:36px}
+  .bigphoto{max-height:35%;border-width:2px}
+}
+</style></head><body>
+<div class="atmosphere" aria-hidden="true">
+  <svg class="lightning lightning-left" viewBox="0 0 360 950"><path d="m145-20-25 132 58 65-75 86 24 67-62 113 45 75-85 95 39 97-48 141"/><path d="m103 263 93 12 36 69 87 30M65 443 3 413M64 710l96 15 60 67"/></svg>
+  <svg class="lightning lightning-right" viewBox="0 0 360 950"><path d="m271-20-93 119 26 90-63 85 54 112-95 112 39 99-64 102 31 155"/><path d="m141 274-79-26L5 320m190 66 116 5 59-57m-231 263 89 27 58 127"/></svg>
+</div>
+<div class="page">
+  <header class="masthead"><a class="brand" href="#game-console" aria-label="前往游戏"><span class="brand-icon">✳</span><span>LEFT<small>PHOTO MERGE CLUB</small></span></a><div class="edition">VOL. 01 <span>✦</span> BLUE ARCADE</div></header>
+  <main class="layout">
+    <section class="console-area" id="game-console" aria-label="合成大西瓜游戏">
+      <div class="console">
+        <div class="console-top"><span class="console-name">LEFT</span><span class="power"><b></b> POWER</span></div>
+        <div class="screen-bezel">
+          <div class="hud"><div class="panel"><small>SCORE / 分数</small><span id="score">0</span></div><div class="panel"><small>BEST / 最高</small><span id="best">0</span></div><div class="panel" id="nextBox"><small>NEXT<br>下一个</small><canvas id="next" width="46" height="46" aria-label="下一张照片"></canvas></div></div>
+          <div class="stage"><canvas id="game" tabindex="0" aria-label="游戏区域：移动鼠标选位置，点击或按空格投放；手机滑动后松手投放"></canvas>
+            <div id="overlay" role="dialog" aria-modal="true" aria-labelledby="overTitle"><span class="dialog-label">ONE MORE TRY?</span><h2 id="overTitle">差一点点，再来！</h2><p>本局得分 <b id="finalScore">0</b></p><button id="restart">再来一局 ↗</button></div>
+            <div id="winOverlay" role="dialog" aria-modal="true" aria-labelledby="winTitle"><span class="dialog-label">ALL THE WAY TO YOU</span><h2 id="winTitle">恭喜你合成了大厚米~</h2><img id="winPhoto" class="bigphoto" alt="大厚米"><button id="winRestart">再来一局 ↗</button></div>
+          </div>
+          <div class="screen-caption"><span>● PHOTO MERGE SYSTEM</span><span>11 LEVELS</span></div>
+        </div>
+        <div class="console-controls"><div class="direction-controls"><button id="moveLeft" aria-label="向左移动投放位置">◀</button><span aria-hidden="true">✦</span><button id="moveRight" aria-label="向右移动投放位置">▶</button></div><div class="sound-control"><button id="soundBtn" aria-pressed="true">音效 ON</button><small>SOUND</small></div><button id="dropButton" aria-label="投放照片"><span>↓</span>DROP</button></div>
+        <div class="console-bottom"><span>forget me not</span><div class="speaker" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i></div></div>
+      </div>
+      <p class="tip"><span>↔ 移动选位置</span><span>点击 / 空格投放</span><span>手机松手投放</span></p>
+    </section>
+  </main>
+  <footer class="footer"><span>WITH A FORGET-ME-NOT, I BEG TO NEVER BE FORGOTTEN.</span></footer>
+</div>
+<canvas id="confetti" aria-hidden="true"></canvas>
+<script src="matter.min.js"></script><script>// Full original photo pool. Only this round's eleven images are loaded.
+const PHOTO_DIR = '合成大西瓜 zh/';
+const ALL_PHOTOS = [
+  "007gu1z0gy1iesxoeojm8j31sc2dskjl.jpg",
+  "007gu1z0gy1iewfic1i56j31sc2dsx6p.jpg",
+  "007gu1z0gy1ieyzqtf199j31sc2ds1ky.jpg",
+  "007gu1z0gy1if13s2b9sej31sc2dsnpd.jpg",
+  "007gu1z0gy1if26sn8c34j31sc2dsu0x.jpg",
+  "007gu1z0gy1if39fivk46j31sc2dshdu.jpg",
+  "007gu1z0gy1if4mps76rej31sc2ds4qq.jpg",
+  "007gu1z0gy1ifad20qef8j31sc2ds1ky.jpg",
+  "007gu1z0gy1ifm5sx0xezj33s051chdx.jpg",
+  "007gu1z0gy1ifmzgugehpj33s051chdz.jpg",
+  "007gu1z0gy1ig5nzx4azbj33s051c1l1.jpg",
+  "007gu1z0gy1igbohh7y4qj31sc2dsqv5.jpg",
+  "007gu1z0gy1igcbwv7x1wj31sc2dshdt.jpg",
+  "007gu1z0gy1igdl0ixuspj33s051ckjo.jpg",
+  "007gu1z0gy1igen4ur356j31sc2dsnpd.jpg",
+  "007gu1z0gy1igfupicw5cj31sc2dsqv5.jpg",
+  "007gu1z0gy1igh4mkmhqpj31sc2ds1ky.jpg",
+  "007gu1z0gy1ighp6cqhf1j31sc2dshdu.jpg",
+  "007gu1z0gy1igidzxfqk6j31sc2dsx6p.jpg",
+  "007gu1z0gy1igjf3cvtusj31sc2ds4qq.jpg",
+  "007gu1z0gy1igl78c21ffj31sc2dsx6p.jpg",
+  "007gu1z0gy1iglrb1e4gij31sc2dskjl.jpg",
+  "007gu1z0gy1igmx1lco61j31sc2dsx6p.jpg",
+  "007gu1z0ly1ieqqt7m9hyj33s051c7wp.jpg",
+  "007gu1z0ly1ierucs59lqj31sc2dsb2a.jpg",
+  "007gu1z0ly1if5kr4v4foj31sc2ds1ky.jpg",
+  "007gu1z0ly1if6qxjs217j31sc2dsx6q.jpg",
+  "007gu1z0ly1if9787cslwj33eb4j34qs.jpg",
+  "007gu1z0ly1ifbjzqeg6gj33s051c1l1.jpg",
+  "007gu1z0ly1ifcqjmlnqgj33s051c4qs.jpg",
+  "007gu1z0ly1ifdm69eo8oj33s051c4qs.jpg",
+  "007gu1z0ly1ifhtuet6j4j31sc2ds4qq.jpg",
+  "007gu1z0ly1ifjjhj5ye3j31sc2dsx6p.jpg",
+  "007gu1z0ly1ifknukvcugj31sc2ds4qq.jpg",
+  "007gu1z0ly1iflbwpaaxkj31sc2ds1ky.jpg",
+  "007gu1z0ly1ifojlns51fj33s051cqva.jpg",
+  "007gu1z0ly1ifpwx0f769j33s051cnpg.jpg",
+  "007gu1z0ly1ifqjwyazesj33s051c1l2.jpg",
+  "007gu1z0ly1ifrttz7n54j33s051cqv8.jpg",
+  "007gu1z0ly1ifspky4hibj33s051ce85.jpg",
+  "007gu1z0ly1iftwjnmaunj33s051c7wk.jpg",
+  "007gu1z0ly1ifvhhx4fq3j33fi4kou0z.jpg",
+  "007gu1z0ly1ifwffeijqqj33s051cqv9.jpg",
+  "007gu1z0ly1ifxi5uq0fbj31sc2ds4qq.jpg",
+  "007gu1z0ly1ifyegatjfaj31sc2dsb2a.jpg",
+  "007gu1z0ly1ifzw5iekgmj31sc2ds4qq.jpg",
+  "007gu1z0ly1ig0vql4i45j31rb2cfx6p.jpg",
+  "007gu1z0ly1ig388ur2dkj31sc2ds4qq.jpg",
+  "007gu1z0ly1ig4f1s27wtj31sc2ds1ky.jpg",
+  "007gu1z0ly1ig62gyagrtj33i04o04qt.jpg",
+  "007gu1z0ly1ig62h0r1sjj33s051ckjo.jpg",
+  "007gu1z0ly1ig6wa09d97j31sc2dsx6p.jpg",
+  "007gu1z0ly1ig7zm6caa9j31sc2dskjl.jpg",
+  "007gu1z0ly1iga8c5cqu3j31sc2ds4qq.jpg",
+  "052e4a344cb333b6f06bb12c08cc702e.jpg",
+  "0fa7bc25b5387303362c1f06dde7e9c4.jpg",
+  "165866e59c6450dccc04f4ee211ab3a5.jpg",
+  "289b0e9f29a6abdd02954c3255af3cb1.jpg",
+  "33c1bb78b68107cd47ce566824876423.jpg",
+  "b07976d95dce0964ee597b73b3e3ce21.jpg",
+  "b99537f7dc88978c146a0c393a5ad0f1.jpg",
+  "b9a8e0e0296a85a437f14726758d0f5c.jpg",
+  "de58f52de9ae2c897af42df9616cd82c.jpg"
+];
+const TARGET_LEVELS = 11;
+const FINAL_PHOTO = "052e4a344cb333b6f06bb12c08cc702e.jpg";
+const RANDOM_POOL = ALL_PHOTOS.filter(f => f !== FINAL_PHOTO);
+const fileToImg = {};
+let LEVEL_FILES = [];
+let LEVELS = 0, MAX_LEVEL = 0, SPAWN_MAX = 5;
+let RADII = [];
+function shuffle(a) {
+  for (let i = a.length - 1; i > 0; i--) {
+    const j = Math.floor(Math.random() * (i + 1));
+    [a[i], a[j]] = [a[j], a[i]];
+  }
+  return a;
+}
+function pickLevels() {
+  return [...shuffle(RANDOM_POOL.slice()).slice(0, TARGET_LEVELS - 1), FINAL_PHOTO];
+}
+function loadRoundPhotos() {
+  for (const file of Object.keys(fileToImg)) {
+    if (!LEVEL_FILES.includes(file)) delete fileToImg[file];
+  }
+  for (const file of LEVEL_FILES) {
+    if (fileToImg[file]) continue;
+    const im = new Image();
+    im.decoding = 'async';
+    im.addEventListener('load', drawNext);
+    im.src = PHOTO_DIR + file;
+    fileToImg[file] = im;
+  }
+}
+
+function computeRadii() {
+  RADII = [];
+  let r = 20;
+  for (let i = 0; i < LEVELS; i++) { RADII.push(Math.round(r)); r *= 1.17; }
+}
+
+// 画布尺寸（逻辑像素）
+const W = 420, H = 640;
+const WALL = 20;
+const DROP_Y = 54;               // 待落水果的悬停高度
+const DANGER_Y = 114;            // 死亡线
+
+// ---------- Matter 初始化 ----------
+const { Engine, World, Bodies, Body, Composite, Events } = Matter;
+const engine = Engine.create();
+engine.gravity.y = 1.05;
+const world = engine.world;
+
+let fruits = [];          // 当前所有水果 body
+let pendingMerges = [];
+let currentLevel = randSpawn();
+let nextLevel = randSpawn();
+let dropX = W / 2;
+let canDrop = true;
+let score = 0;
+let best = Number(localStorage.getItem('watermelon_best') || 0);
+let running = false;
+let overTimer = 0;
+let won = false;
+
+let walls = [];
+
+function buildWalls() {
+  const opt = { isStatic: true, render: { visible: false }, friction: 0.4 };
+  walls = [
+    Bodies.rectangle(W / 2, H + WALL / 2, W + 2 * WALL, WALL, opt),       // 地面
+    Bodies.rectangle(-WALL / 2, H / 2, WALL, H * 2, opt),                 // 左墙
+    Bodies.rectangle(W + WALL / 2, H / 2, WALL, H * 2, opt)               // 右墙
+  ];
+  World.add(world, walls);
+}
+
+function randSpawn() { return Math.floor(Math.random() * SPAWN_MAX); }
+
+function spawnFruit(x, y, level, isMerge) {
+  const r = RADII[level];
+  const body = Bodies.circle(x, y, r, {
+    restitution: 0.12,
+    friction: 0.35,
+    frictionStatic: 0.6,
+    density: 0.001,
+    label: 'fruit'
+  });
+  body.fruitLevel = level;
+  body.merged = false;
+  fruits.push(body);
+  World.add(world, body);
+  return body;
+}
+
+// 合成处理
+Events.on(engine, 'collisionStart', (e) => {
+  for (const pair of e.pairs) {
+    const a = pair.bodyA, b = pair.bodyB;
+    if (a.label === 'fruit' && b.label === 'fruit' &&
+        !a.merged && !b.merged && a.fruitLevel === b.fruitLevel) {
+      a.merged = true; b.merged = true;
+      pendingMerges.push([a, b]);
+    }
+  }
+});
+
+function processMerges() {
+  if (!pendingMerges.length) return;
+  for (const [a, b] of pendingMerges) {
+    const x = (a.position.x + b.position.x) / 2;
+    const y = (a.position.y + b.position.y) / 2;
+    const lvl = a.fruitLevel;
+    removeFruit(a); removeFruit(b);
+    if (lvl < MAX_LEVEL) {
+      const nl = lvl + 1;
+      spawnFruit(x, y, nl);
+      score += (nl) * (nl + 1) / 2;     // 合成越大得分越多
+      playMerge(nl);
+      if (nl === MAX_LEVEL) celebrate();   // 合成出目标图！
+    } else {
+      // 两个目标图相遇：消除并给大额奖励
+      score += 200;
+      playMerge(MAX_LEVEL);
+    }
+  }
+  pendingMerges = [];
+  updateScore();
+}
+
+function removeFruit(body) {
+  const i = fruits.indexOf(body);
+  if (i >= 0) fruits.splice(i, 1);
+  World.remove(world, body);
+}
+
+// ---------- 画布 ----------
+const canvas = document.getElementById('game');
+const ctx = canvas.getContext('2d');
+const dpr = Math.min(window.devicePixelRatio || 1, 2);
+canvas.width = W * dpr; canvas.height = H * dpr;
+ctx.scale(dpr, dpr);
+
+function drawFruitCircle(x, y, r, level, angle) {
+  ctx.save();
+  ctx.translate(x, y);
+  if (angle) ctx.rotate(angle);
+  ctx.beginPath();
+  ctx.arc(0, 0, r, 0, Math.PI * 2);
+  ctx.clip();
+  const im = fileToImg[LEVEL_FILES[level]];
+  if (im && im.complete && im.naturalWidth) {
+    // 等比 cover：保持原图比例，只裁掉超出圆形的部分，不压扁
+    const ir = im.naturalWidth / im.naturalHeight;
+    let dw, dh;
+    if (ir >= 1) { dh = r * 2; dw = dh * ir; } else { dw = r * 2; dh = dw / ir; }
+    ctx.drawImage(im, -dw / 2, -dh / 2, dw, dh);
+  } else {
+    ctx.fillStyle = '#f1c27d';
+    ctx.fillRect(-r, -r, r * 2, r * 2);
+  }
+  ctx.restore();
+  // 边框
+  ctx.beginPath();
+  ctx.arc(x, y, r, 0, Math.PI * 2);
+  ctx.lineWidth = 2;
+  ctx.strokeStyle = 'rgba(150,90,30,.35)';
+  ctx.stroke();
+}
+
+function render() {
+  ctx.clearRect(0, 0, W, H);
+
+  // 死亡线
+  ctx.save();
+  ctx.setLineDash([6, 6]);
+  ctx.strokeStyle = 'rgba(255,151,187,.68)';
+  ctx.lineWidth = 1.5;
+  ctx.beginPath();
+  ctx.moveTo(8, DANGER_Y); ctx.lineTo(W - 8, DANGER_Y);
+  ctx.stroke();
+  ctx.restore();
+
+
+  // 待落水果 + 引导线
+  if (running && canDrop) {
+    const r = RADII[currentLevel];
+    const cx = Math.max(r, Math.min(W - r, dropX));
+    ctx.save();
+    ctx.globalAlpha = 0.35;
+    ctx.setLineDash([4, 6]);
+    ctx.strokeStyle = 'rgba(155,241,255,.8)';
+    ctx.beginPath();
+    ctx.moveTo(cx, DROP_Y + r);
+    ctx.lineTo(cx, H - 4);
+    ctx.stroke();
+    ctx.restore();
+    // 所有水果
+  for (const b of fruits) {
+    drawFruitCircle(b.position.x, b.position.y, RADII[b.fruitLevel], b.fruitLevel, b.angle);
+  }
+    drawFruitCircle(cx, DROP_Y, r, currentLevel, 0);
+  } else {
+  // 所有水果
+  for (const b of fruits) {
+    drawFruitCircle(b.position.x, b.position.y, RADII[b.fruitLevel], b.fruitLevel, b.angle);
+  }
+
+  }
+}
+
+// ---------- 游戏循环 ----------
+let lastT = 0, accumulator = 0, gameRAF = null;
+const STEP = 1000 / 60;
+function loop(t) {
+  if (!running) return;
+  if (!lastT) lastT = t;
+  accumulator += Math.min(100, t - lastT);
+  lastT = t;
+  while (accumulator >= STEP && running) {
+    processMerges();
+    if (running) {
+      Engine.update(engine, STEP);
+      checkGameOver();
+    }
+    accumulator -= STEP;
+  }
+  render();
+  if (running) gameRAF = requestAnimationFrame(loop);
+}
+
+function checkGameOver() {
+  let danger = false;
+  for (const b of fruits) {
+    const r = RADII[b.fruitLevel];
+    if (b.position.y - r < DANGER_Y && b.speed < 0.8) { danger = true; break; }
+  }
+  overTimer = danger ? overTimer + 1 / 60 : 0;
+  if (overTimer > 2) gameOver();
+}
+
+function gameOver() {
+  running = false;
+  if (score > best) {
+    best = score;
+    localStorage.setItem('watermelon_best', String(best));
+  }
+  document.getElementById('best').textContent = best;
+  document.getElementById('finalScore').textContent = score;
+  document.getElementById('overlay').style.display = 'flex';
+}
+
+// ---------- 音效（Web Audio 合成，无需音频文件） ----------
+let audioCtx = null;
+let soundOn = true;
+function resumeAudio() {
+  if (!audioCtx) audioCtx = new (window.AudioContext || window.webkitAudioContext)();
+  if (audioCtx.state === 'suspended') audioCtx.resume();
+}
+function tone(freq, dur, type, vol) {
+  if (!soundOn) return;
+  resumeAudio();
+  const t = audioCtx.currentTime;
+  const osc = audioCtx.createOscillator();
+  const gain = audioCtx.createGain();
+  osc.type = type || 'sine';
+  osc.frequency.setValueAtTime(freq, t);
+  gain.gain.setValueAtTime(0, t);
+  gain.gain.linearRampToValueAtTime(vol || 0.2, t + 0.01);
+  gain.gain.exponentialRampToValueAtTime(0.0001, t + dur);
+  osc.connect(gain); gain.connect(audioCtx.destination);
+  osc.start(t); osc.stop(t + dur);
+}
+function playDrop() { tone(180, 0.18, 'sine', 0.25); }                 // 落子：低沉“咚”
+function playMerge(level) {                                            // 合成：音高随等级升高
+  const base = 300 + level * 45;
+  tone(base, 0.12, 'triangle', 0.22);
+  setTimeout(() => tone(base * 1.5, 0.14, 'triangle', 0.18), 60);
+}
+
+// ---------- 庆祝弹窗 + 彩带 ----------
+function celebrate() {
+  if (won) return;
+  won = true;
+  running = false;   // 停止物理循环，专注庆祝
+  const photo = fileToImg[LEVEL_FILES[MAX_LEVEL]];
+  const wimg = document.getElementById('winPhoto');
+  wimg.src = (photo && photo.src) || '';
+  document.getElementById('winOverlay').style.display = 'flex';
+  launchConfetti();
+}
+let confettiRAF = null;
+function launchConfetti() {
+  const cv = document.getElementById('confetti');
+  cv.width = window.innerWidth; cv.height = window.innerHeight;
+  const c = cv.getContext('2d');
+  const colors = ['#8ec6f2', '#b3dcff', '#d9ecff', '#ffffff', '#ffd9a3', '#a8e0e8'];
+  const parts = [];
+  for (let i = 0; i < 160; i++) {
+    parts.push({
+      x: Math.random() * cv.width,
+      y: Math.random() * -cv.height,
+      w: 6 + Math.random() * 6, h: 10 + Math.random() * 8,
+      vy: 2 + Math.random() * 4, vx: -2 + Math.random() * 4,
+      rot: Math.random() * Math.PI, vr: -0.2 + Math.random() * 0.4,
+      color: colors[(Math.random() * colors.length) | 0]
+    });
+  }
+  const start = performance.now();
+  cancelAnimationFrame(confettiRAF);
+  function frame(now) {
+    c.clearRect(0, 0, cv.width, cv.height);
+    let alive = false;
+    for (const p of parts) {
+      p.x += p.vx; p.y += p.vy; p.rot += p.vr;
+      if (p.y < cv.height + 20) alive = true;
+      c.save();
+      c.translate(p.x, p.y); c.rotate(p.rot);
+      c.fillStyle = p.color;
+      c.fillRect(-p.w / 2, -p.h / 2, p.w, p.h);
+      c.restore();
+    }
+    if (alive && (now - start < 4000 || document.getElementById('winOverlay').style.display !== 'none')) {
+      confettiRAF = requestAnimationFrame(frame);
+    } else {
+      c.clearRect(0, 0, cv.width, cv.height);
+    }
+  }
+  confettiRAF = requestAnimationFrame(frame);
+}
+
+// ---------- 操作 ----------
+function doDrop() {
+  if (!running || !canDrop) return;
+  const r = RADII[currentLevel];
+  const cx = Math.max(r, Math.min(W - r, dropX));
+  spawnFruit(cx, DROP_Y, currentLevel);
+  playDrop();
+  canDrop = false;
+  currentLevel = nextLevel;
+  nextLevel = randSpawn();
+  drawNext();
+  setTimeout(() => { canDrop = true; }, 420);
+}
+
+function pointerX(e) {
+  const rect = canvas.getBoundingClientRect();
+  const clientX = e.touches ? e.touches[0].clientX : e.clientX;
+  return (clientX - rect.left) * (W / rect.width);
+}
+
+canvas.addEventListener('mousemove', e => { dropX = pointerX(e); });
+canvas.addEventListener('mousedown', e => { dropX = pointerX(e); doDrop(); });
+canvas.addEventListener('touchmove', e => { e.preventDefault(); dropX = pointerX(e); }, { passive: false });
+canvas.addEventListener('touchstart', e => { e.preventDefault(); dropX = pointerX(e); }, { passive: false });
+canvas.addEventListener('touchend', e => { e.preventDefault(); doDrop(); }, { passive: false });
+window.addEventListener('keydown', e => { if (e.code === 'Space') { e.preventDefault(); doDrop(); } });
+
+// 下一个预览
+const nextCanvas = document.getElementById('next');
+const nctx = nextCanvas.getContext('2d');
+function drawNext() {
+  nctx.clearRect(0, 0, 46, 46);
+  const r = 21;
+  const im = fileToImg[LEVEL_FILES[nextLevel]];
+  nctx.save();
+  nctx.beginPath();
+  nctx.arc(23, 23, r, 0, Math.PI * 2);
+  nctx.clip();
+  if (im && im.complete && im.naturalWidth) {
+    const ir = im.naturalWidth / im.naturalHeight;
+    let dw, dh;
+    if (ir >= 1) { dh = r * 2; dw = dh * ir; } else { dw = r * 2; dh = dw / ir; }
+    nctx.drawImage(im, 23 - dw / 2, 23 - dh / 2, dw, dh);
+  } else { nctx.fillStyle = '#f1c27d'; nctx.fillRect(2, 2, 42, 42); }
+  nctx.restore();
+}
+
+function updateScore() {
+  document.getElementById('score').textContent = score;
+}
+
+// ---------- 开始 / 重开 ----------
+function startGame() {
+  cancelAnimationFrame(gameRAF);
+  lastT = 0; accumulator = 0;
+  World.clear(world, false);
+  fruits = [];
+  pendingMerges = [];
+  score = 0;
+  overTimer = 0;
+  won = false;
+  LEVEL_FILES = pickLevels();
+  loadRoundPhotos();
+  LEVELS = LEVEL_FILES.length;
+  MAX_LEVEL = LEVELS - 1;
+  SPAWN_MAX = Math.min(5, LEVELS);
+  computeRadii();
+  canDrop = true;
+  currentLevel = randSpawn();
+  nextLevel = randSpawn();
+  buildWalls();
+  updateScore();
+  document.getElementById('best').textContent = best;
+  document.getElementById('overlay').style.display = 'none';
+  document.getElementById('winOverlay').style.display = 'none';
+  drawNext();
+  running = true;
+  gameRAF = requestAnimationFrame(loop);
+}
+
+document.getElementById('restart').addEventListener('click', startGame);
+
+// 图片加载完成后刷新「下一个」预览
+Object.values(fileToImg).forEach(im => {
+  if (!im.complete) im.addEventListener('load', drawNext);
+});
+
+// ---------- 音效控制按钮 ----------
+const soundBtn = document.getElementById('soundBtn');
+soundBtn.addEventListener('click', () => {
+  soundOn = !soundOn;
+  soundBtn.textContent = soundOn ? '音效 ON' : '音效 OFF';
+  soundBtn.setAttribute('aria-pressed', String(soundOn));
+  if (soundOn) resumeAudio();
+});
+
+// ---------- 胜利弹窗按钮 ----------
+document.getElementById('winRestart').addEventListener('click', startGame);
+
+startGame();
+
+// Console controls use the original drop action; mouse, touch and space still work.
+document.getElementById('dropButton').addEventListener('click', doDrop);
+function moveAim(delta) {
+  const r = RADII[currentLevel];
+  dropX = Math.max(r, Math.min(W - r, dropX + delta));
+}
+document.getElementById('moveLeft').addEventListener('click', () => moveAim(-24));
+document.getElementById('moveRight').addEventListener('click', () => moveAim(24));
+window.addEventListener('keydown', e => {
+  if (e.code === 'ArrowLeft' || e.code === 'ArrowRight') {
+    e.preventDefault(); moveAim(e.code === 'ArrowLeft' ? -24 : 24);
+  }
+});
+</script></body></html>
